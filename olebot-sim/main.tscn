@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfueddh8omcmy"]
+
+[ext_resource type="Script" uid="uid://cc0cpy7v7vk8v" path="res://keybord_view.gd" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://byoreghle5h5d" path="res://key_press_marker.tscn" id="2_0xm2m"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="KeybordView" type="GridContainer" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -218.0
+offset_top = -142.0
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+columns = 3
+script = ExtResource("1_ig7tw")
+
+[node name="Spacer" type="Control" parent="KeybordView"]
+layout_mode = 2
+
+[node name="Up" parent="KeybordView" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="Spacer2" type="Control" parent="KeybordView"]
+layout_mode = 2
+
+[node name="Left" parent="KeybordView" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+direction = "left"
+
+[node name="Down" parent="KeybordView" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+direction = "down"
+
+[node name="Right" parent="KeybordView" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+direction = "right"

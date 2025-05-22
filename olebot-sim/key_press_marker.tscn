@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://byoreghle5h5d"]
+
+[ext_resource type="Script" uid="uid://ctw556i02enr1" path="res://key_press_marker.gd" id="1_72dnv"]
+[ext_resource type="Texture2D" uid="uid://c47jd82bfvlkt" path="res://key_press_marker.svg" id="1_owwbg"]
+
+[node name="KeyPressMarker" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1052.0
+offset_bottom = -548.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_72dnv")
+active = null
+
+[node name="ColorRect" type="ColorRect" parent="."]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(50, 50)
+texture = ExtResource("1_owwbg")
+expand_mode = 5
